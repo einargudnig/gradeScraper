@@ -44,3 +44,10 @@ time - https://docs.python.org/3/library/time.html
 Selenium - https://selenium-python.readthedocs.io/
 
 This is just made for fun so there is 100% possibilty to do this project a lot better, but here is at least a starting point :)
+
+### Extra files
+
+There are some extra files in this directory, most of them where used because I was going to use another method to check for grades first. These files are: compare.py, origin.html, test.html and diff.html
+
+chromedriver.exe is needed for the Selenium to work. See in the documentation.
+
