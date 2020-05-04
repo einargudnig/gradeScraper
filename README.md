@@ -32,10 +32,15 @@ Feel free to fork this and play with as you like. In no means is this a super go
 
 if you want to play around with it you will of course need python set up on your machine, I used Python 3.8.2 and pip to install modules.
 The modules I used in this project:
-os
-smtplib
-beautifulSoup
-time
-Selenium
+
+os - https://docs.python.org/3/library/os.html
+
+smtplib - https://docs.python.org/3/library/smtplib.html
+
+beautifulSoup - https://beautiful-soup-4.readthedocs.io/en/latest/
+
+time - https://docs.python.org/3/library/time.html
+
+Selenium - https://selenium-python.readthedocs.io/
 
 This is just made for fun so there is 100% possibilty to do this project a lot better, but here is at least a starting point :)
