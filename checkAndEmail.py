@@ -1,11 +1,10 @@
 import os
-
 from bs4 import BeautifulSoup
 import smtplib
 
 EMAIL_ADDRESS =  os.environ.get('GRADE_EMAIL_SENDER')
 EMAIL_PASSWORD = os.environ.get('GRADE_EMAIL_SENDER_PW')
-RECIEVER = 'einargudnig@gmail.com'
+RECIEVER = 'einargudnig@gmail.com', 'otha3@hi.is', 'vthf1@hi.is', 'pab14@hi.is', 'aej25@hi.is'
 
 with open('uglaHTML.html') as html_file:
     soup = BeautifulSoup(html_file, 'lxml')
@@ -25,7 +24,7 @@ if str(soup).count("olokid gildir_kanski_til_gradu info") < 2:
 
         msg = f'Subject: {subject}\n\n{body}'
 
-        smtp.sendmail(EMAIL_ADDRESS, RECIEVER, msg)
+        smtp.sendmail(EMAIL_ADDRESS, RECIEVER,  msg)
 
 
 else:
