@@ -4,8 +4,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import os
 
-
+UGLA_USERNAME = os.environ.get('UGLA_LOGIN')
+UGLA_PASSWORD = os.environ.get('UGLA_PASSWORD')
 
 driver = webdriver.Chrome(executable_path="C:\\Users\\Einar\\Desktop\\pythonScraper\\chromedriver.exe")
 
@@ -29,7 +31,7 @@ finally:
     # send user info to seleceted user login input
     time.sleep(1)
     elementInput = driver.find_element_by_name("loginfmt")
-    elementInput.send_keys("egg18@hi.is")
+    elementInput.send_keys(UGLA_LOGIN)
     
     # Press next to proceed with login
     elementBTN = driver.find_element_by_id("idSIButton9")
@@ -41,7 +43,7 @@ finally:
     elementPw = driver.find_element_by_id("i0118")
 
     #Input password value
-    elementPw.send_keys("FF8EVm86")
+    elementPw.send_keys(UGLA_PASSWORD)
 
     # the button has the same ID, so it is "not loaded" to the DOM therefore we wait for two seconds for it to load.
     time.sleep(2)
